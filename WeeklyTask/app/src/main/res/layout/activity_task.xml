@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingHorizontal="15dp"
+    android:paddingBottom="15dp"
+    android:background="@drawable/bg_grad_light"
+    tools:context="com.example.WeeklyTask.Activity.TaskActivity">
+
+    <!-- 画面タイトル -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.07"
+        android:orientation="horizontal">
+
+        <!-- 画面タイトル -->
+        <TextView
+            android:id="@+id/textView_main_page_title"
+            style="@style/text_page_title"
+            android:text="@string/main_page_title"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <!-- 追加ボタン -->
+        <Button
+            android:id="@+id/button_add"
+            style="@style/button_normal"
+            android:text="@string/button_add"/>
+
+
+    </LinearLayout>
+
+    <!-- メインコンテンツ -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 月曜日 -->
+            <LinearLayout
+                    android:id="@+id/linear_monday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_grad"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/textView_monday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/text_norml"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:text="@string/text_monday"/>
+
+                    <ListView
+                        android:id="@+id/listView_monday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"/>
+
+                </LinearLayout>
+
+            <!-- 火曜日 -->
+            <LinearLayout
+                    android:id="@+id/linear_tuesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_grad"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/textView_tuesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/text_norml"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:text="@string/text_tuesday"/>
+
+                    <ListView
+                        android:id="@+id/listView_tuesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"/>
+
+                </LinearLayout>
+
+            <!-- 水曜日 -->
+            <LinearLayout
+                    android:id="@+id/linear_wednesday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_grad"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/textView_wednesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/text_norml"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:text="@string/text_wednesday"/>
+
+                    <ListView
+                        android:id="@+id/listView_wednesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"/>
+
+                </LinearLayout>
+
+            <!-- 木曜日 -->
+            <LinearLayout
+                    android:id="@+id/linear_thursday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_grad"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/textView_thursday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/text_norml"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:text="@string/text_thursday"/>
+
+                    <ListView
+                        android:id="@+id/listView_thursday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"/>
+
+                </LinearLayout>
+
+            <!-- 金曜日 -->
+            <LinearLayout
+                    android:id="@+id/linear_friday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_grad"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/textView_friday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/text_norml"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:text="@string/text_friday"/>
+
+                    <ListView
+                        android:id="@+id/listView_friday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"/>
+
+                </LinearLayout>
+
+            <!-- 土曜日 -->
+            <LinearLayout
+                    android:id="@+id/linear_saturday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_grad"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/textView_saturday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/text_norml"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:text="@string/text_saturday"/>
+
+                    <ListView
+                        android:id="@+id/listView_saturday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"/>
+
+                </LinearLayout>
+
+            <!-- 日曜日 -->
+            <LinearLayout
+                    android:id="@+id/linear_sunday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_grad"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/textView_sunday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/text_norml"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:text="@string/text_sunday"/>
+
+                    <ListView
+                        android:id="@+id/listView_sunday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"/>
+
+                </LinearLayout>
+
+            <!-- メモ -->
+            <LinearLayout
+                    android:id="@+id/linear_memo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_grad"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/textView_memo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/text_norml"
+                        android:paddingHorizontal="15dp"
+                        android:paddingVertical="10dp"
+                        android:text="@string/text_memo"/>
+
+                    <ListView
+                        android:id="@+id/listView_memo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- 画面遷移ボタン -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_achievement"
+            style="@style/button_activity"
+            android:text="@string/button_achievement"/>
+
+    </LinearLayout>
+
+</LinearLayout>

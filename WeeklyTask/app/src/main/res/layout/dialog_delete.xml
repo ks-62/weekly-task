@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="15dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:id="@+id/textView_week"
+        style="@style/text_in_dialog_week"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView_task"
+        style="@style/text_in_dialog_task"
+        android:layout_marginTop="5dp"
+        android:text="" />
+
+</LinearLayout>

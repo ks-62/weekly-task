@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingHorizontal="15dp"
+    android:paddingBottom="15dp"
+    android:background="@drawable/bg_grad_light"
+    tools:context="com.example.WeeklyTask.Activity.GraphActivity">
+
+    <!-- 画面タイトル -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.07"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_achieve_page_title"
+            style="@style/text_page_title"
+            android:text="@string/achieve_page_title"/>
+
+    </LinearLayout>
+
+    <!-- メインコンテンツ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:orientation="vertical"
+        android:paddingBottom="2dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:background="@drawable/bg_grad"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="500dp"
+                android:background="#FFFFFF"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/text_small"
+                    android:text="@string/text_achievement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"/>
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/bar_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 戻るボタン -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_back"
+            style="@style/button_activity"
+            android:text="@string/button_back"/>
+
+    </LinearLayout>
+
+</LinearLayout>

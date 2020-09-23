@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Weekly Task</string>
+    <string name="main_page_title">今週の予定</string>
+    <string name="achieve_page_title">８週間前までの達成率</string>
+    <string name="text_monday">月曜日</string>
+    <string name="text_tuesday">火曜日</string>
+    <string name="text_wednesday">水曜日</string>
+    <string name="text_thursday">木曜日</string>
+    <string name="text_friday">金曜日</string>
+    <string name="text_saturday">土曜日</string>
+    <string name="text_sunday">日曜日</string>
+    <string name="text_memo">メモ</string>
+    <string name="text_task">課題</string>
+    <string name="text_fix_flg">固定課題（週が変わっても削除されません）</string>
+    <string name="text_err_dup">すでに登録されている課題です。</string>
+    <string name="text_err_over">一つの曜日に設定できる課題は10個までです。お休みも大切です。</string>
+    <string name="text_achievement">８週間前までの課題の達成率が記録されています。月曜日に、その時点の課題の総数と達成数から
+        その前の週の達成率が計算されます。削除した課題は計算に含まれません。</string>
+
+    <string name="button_achievement">達成率</string>
+    <string name="button_back">戻る</string>
+    <string name="button_add">+</string>
+    <string name="button_done">完了</string>
+    <string name="button_done_clicked">✔︎</string>
+
+    <string-array name="weekList">
+        <item>月曜日</item>
+        <item>火曜日</item>
+        <item>水曜日</item>
+        <item>木曜日</item>
+        <item>金曜日</item>
+        <item>土曜日</item>
+        <item>日曜日</item>
+        <item>メモ</item>
+    </string-array>
+
+</resources>
